@@ -5,7 +5,7 @@
  }
 
 header {
-   background: url(../images/stars-hero.jpg) center / cover;
+   /*background: url(../images/stars-hero.jpg) center / cover;*/
    height: 60vh;
    justify-content: center;
    text-align: center;
