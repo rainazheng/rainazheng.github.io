@@ -29,6 +29,7 @@ h2 {
 
 h3 {
   text-transform: uppercase;
+  font-size: 1.25rem;
   color: #40AEFE;
 }
 
@@ -42,8 +43,18 @@ h4 {
   font-size: 1.6rem;
 }*/
 
-main {
-  max-width: 900px;
+b {
+  font-weight: bold;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.card {
+  display: inline-block;
 }
 
 .prj-part {
