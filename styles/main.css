@@ -9,39 +9,47 @@ body {
 }
 
 .hero {
-   /*background: url(../images/stars-hero.jpg) center / cover;*/
    height: 100vh;
    justify-content: center;
    text-align: center;
  }
 
 h1 {
+  color: #40AEFE;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   /*color: hsla(0, 0%, 100%, 0.9);*/
 }
 
 h2 {
   color: #40AEFE;
-  font-size: 1.5rem;
+  font-family: 'Poppins-Bold', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 h3 {
-  text-transform: uppercase;
-  font-size: 1.25rem;
   color: #40AEFE;
+  font-family: 'Poppins-Regular', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 h4 {
-  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
 }
 
-/*.slogan {
-  font-weight: lighter;
-  color: hsla(0, 0%, 100%, 0.7);
-  font-size: 1.6rem;
-}*/
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 b {
   font-weight: bold;
@@ -61,17 +69,17 @@ b {
   margin: 2rem;
 }
 
-.project-description {
+/*.project-description {
   padding-left: 0;
 }
 
 .project img {
   width: 100%;
-}
+}*/
 
-body {
+/*body {
   padding-bottom: 5rem;
-}
+}*/
 
 footer.mdl-mini-footer {
   bottom: 0;
