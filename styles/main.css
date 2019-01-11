@@ -1,11 +1,31 @@
 @media screen and (max-width: 1024px) {
-   header.mdl-layout__header {
+/*   header.mdl-layout__header {
      display: flex;
-   }
- }
+   }*/
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+img {
+  width: auto;
+  max-height: 85rem;
+}
+
+header {
+  position: fixed;
+}
 
 body {
   font-size: 10px;
+}
+
+section {
+  max-width: 100%;
 }
 
 .hero {
@@ -14,6 +34,25 @@ body {
    text-align: center;
  }
 
+.prj-part {
+  margin: 2rem;
+}
+
+/* horizontal scrolling */
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.card {
+  display: inline-block;
+  height: auto;
+}
+
+/* font and typography styling */
+
 h1 {
   color: #40AEFE;
   font-family: 'Poppins', sans-serif;
@@ -21,7 +60,6 @@ h1 {
   font-size: 3rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  /*color: hsla(0, 0%, 100%, 0.9);*/
 }
 
 h2 {
@@ -55,31 +93,7 @@ b {
   font-weight: bold;
 }
 
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
-.card {
-  display: inline-block;
-}
-
-.prj-part {
-  margin: 2rem;
-}
-
-/*.project-description {
-  padding-left: 0;
-}
-
-.project img {
-  width: 100%;
-}*/
-
-/*body {
-  padding-bottom: 5rem;
-}*/
+/* footer */
 
 footer.mdl-mini-footer {
   bottom: 0;
