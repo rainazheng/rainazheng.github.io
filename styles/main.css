@@ -135,13 +135,37 @@ img {
 }
 
 .prj-part {
-  margin: 2rem;
+  margin: 2rem 0;
   align-self: center;
 }
 
 .hero-text {
   margin: 50% 0;
   /*width: 40rem;*/
+}
+
+.table {
+  display: flex;
+  display: block;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+}
+
+.table-foot {
+  padding-bottom: 4rem;
+}
+
+.table-header {
+  text-align: left;
+}
+
+.table-cell {
+  box-sizing: border-box;
+  height: 1rem;
+  flex-grow: 1;
+  /* padding: 1rem; */
+  /* margin: 0; */
+  /* border: 2px solid purple; */
 }
 
 /* horizontal scrolling */
@@ -209,17 +233,13 @@ b {
   font-weight: bold;
 }
 
-td {
+/* td {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.4rem;
   font-weight: lighter;
   padding: 0.2rem;
   width: 10rem;
-}
-
-.table-header {
-  text-align: left;
-}
+} */
 
 /* button styling */
 button {
