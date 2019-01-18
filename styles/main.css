@@ -19,8 +19,10 @@
   justify-content: center;
   margin: 0 auto;
   /* overflow-y: scroll; */
+  /* position: relative; */
   scroll-snap-type: y proximity;
   width: 100%;
+  /* z-index: 0; */
   /* border: 2px solid blue; */
 }
 
@@ -76,6 +78,7 @@ header {
   padding: 1rem;
   position: fixed;
   width: 100%;
+  z-index: 0;
 }
 
 #logo {
@@ -83,6 +86,7 @@ header {
   float: left;
   height: 3rem;
   width: auto;
+  z-index: 3;
   /*padding: 0.5rem;*/
   /*border: 3px solid blue;*/
 }
@@ -121,6 +125,7 @@ header {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  z-index: 3;
 }
 
 #nav-icon span {
@@ -173,6 +178,58 @@ header {
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+/* overlay menu */
+
+.closed {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, .5);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.open {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 1);
+  overflow-y: hidden;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  z-index: 2;
+}
+
+#menu a {
+  padding: 2rem;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #F69709;
+  display: block;
+  transition: 0.3s;
+}
+
+#menu a:hover, .overlay a:focus {
+  color: #C2E5FF;
 }
 
 /* project roles table */
@@ -330,7 +387,8 @@ b {
 }
 
 .button:hover {
-  background-image: linear-gradient(45deg,#F69709 40%,#FF6B00 60%);
+  background-image: linear-gradient(45deg,#F7AA36 30%,#FF6B00 70%);
+  border: 2px solid #F7AA36;
   color: #FFFFFF;
 }
 
