@@ -32,19 +32,19 @@
       </div>
       <div id="menu" class="closed">
         <div class="overlay-content">
-          <a href="#">Home</a>
-          <a href="#">Work</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="#hero">Home</a>
+          <a href="#projects">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </header>
     <!-- page steppers -->
     <ul id="steppers">
-      <li data-section-name="home" caption="Home"></li>
-      <li data-section-name="projects" caption="Work"></li>
-      <li data-section-name="about" caption="About"></li>
-      <li data-section-name="contact" caption="Contact"></li>
+      <li id="stepOne" caption="Home" class="activeStepper"></li>
+      <li id="stepTwo" caption="Work"></li>
+      <li id="stepThree" caption="About"></li>
+      <li id="stepFour" caption="Contact"></li>
     </ul>
     <!-- content -->
     <div class="container">
@@ -54,7 +54,8 @@
           <h5>I’m a DC-based <span class="highlight">user experience designer</span> with a zeal for <span class="highlight">empathetic design</span> and <span class="highlight">human-centered problem solving.</span></h5>
         </div>
       </section>
-      <section id="project" class="homepage-section">
+      <div id="below-hero"></div>
+      <section id="projects" class="homepage-section">
         <div class="projects">
           <div class="muse">
             <h2>Muse</h2>
@@ -64,11 +65,13 @@
           </div>
         </div>
       </section>
+      <div id="below-projects"></div>
       <section id="about" class="homepage-section">
         <h2>About</h2>
         <img src="images/it-me.png" alt="Raina Zheng irl" class="only-pics">
         <h4>I didn’t know UX design was a career option when I started working three years ago at a medical software company. I was a software tester, and my job was to make sure not only that the software worked, but that it was “a joy to use”. Throughout my time there, there was a huge company-wide initiative to focus more on usability as a way to set us apart from our competitors. As a result, I worked more closely with our UX designers, which were in short supply, and took on a lot of the UX research for my individual projects. <br><br> The more I got involved with UX and learning core UX principles, the more fascinated I was. Going on work trips to various hospitals and watching cardiologists and technologists use the tools I helped make really impressed upon me the importance of good design, especially in a critical setting like the cath lab. <br><br>Suddenly, it clicked. Why not just become a full-time UX designer? That was already the most interesting part of my job. <br><br>Now, I love that I can indulge my analytical and problem-solving side by finding code solutions while also being able to flex my creative design muscles--it’s the best of both worlds. If you’re as passionate about good UX design and want to learn more about me, please don’t hesitate to get in touch.</h4>
       </section>
+      <div id="below-about"></div>
       <section id="contact" class="homepage-section">
         <h2>Contact</h2>
       </section>
@@ -107,6 +110,8 @@
 
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/localWaypoints.js"></script>
   </body>
 </html>
