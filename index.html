@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/logo-simple.png"/>
     <!-- Material Design Lite -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-orange.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-orange.min.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
     <!-- Font Awesome -->
@@ -31,10 +31,12 @@
         <span></span>
       </div>
       <div id="menu" class="closed">
-          <a href="#hero" class="overlay-content">Home</a>
-          <a href="#projects" class="overlay-content">Work</a>
-          <a href="#about" class="overlay-content">About</a>
-          <a href="#contact" class="overlay-content">Contact</a>
+        <div class="overlay-content">
+          <a href="#hero">Home</a>
+          <a href="#projects">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
       </div>
     </header>
     <!-- page steppers -->
@@ -71,39 +73,44 @@
       </section>
       <div id="below-about"></div>
       <section id="contact" class="homepage-section">
-        <h2>Contact</h2>
+        <div class="contact-block">
+          <h2>Contact</h2>
+          <div class="form-block">
+            <h4>Say hello!</h4>
+            <form action="https://formspree.io/twirlyfwirly@gmail.com" method="POST">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" name="name" id="name">
+                <label class="mdl-textfield__label" for="name">Name</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" name="_replyto" id="email">
+                <label class="mdl-textfield__label" for="email">Email</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" type="text" name="message" rows="3" id="message"></textarea>
+                <label class="mdl-textfield__label" for="message">What's on your mind?</label>
+              </div>
+              <input type="submit" class="button" name="send" value="Send" style="width: 10rem;">
+            </form>
+            <ul class="contact-links">
+              <li>
+                <a href="https://www.linkedin.com/in/rainazheng/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/rainazheng"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/_rainazheng"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
 
     <!-- footer -->
-    <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
-        <li>
-          <a href="https://www.linkedin.com/in/rainazheng/">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/rainazheng">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/raina.reigna">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/_rainazheng">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:raina.zheng@gmail.com">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
+    <footer>
+      <h6>© Raina Zheng 2019</h6>
     </footer>
 
     <!-- scripts -->

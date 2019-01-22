@@ -1,7 +1,17 @@
-@media screen and (max-width: 1024px) {
-/*   header.mdl-layout__header {
-     display: flex;
-   }*/
+@media screen and (min-width: 575px) {
+
+  form {
+    max-width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 991px) {
+
+  form {
+    max-width: 50%;
+    margin: auto;
+  }
 }
 
 @keyframes highlighter {
@@ -24,7 +34,6 @@ body {
 
 .container {
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
@@ -34,13 +43,11 @@ body {
 }
 
 section {
-  /* max-width: 75%; */
-  height: 100%;
+  /* height: 100%; */
   overflow: visible;
   position: relative;
   scroll-snap-align: start;
   width: 75%;
-  /* border: 2px solid green; */
 }
 
 .homepage-section {
@@ -195,10 +202,10 @@ header {
   background-color: rgb(255,255,255);
   background-color: rgba(255,255,255, .9);
   overflow-y: hidden;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -o-transition: .5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .open {
@@ -210,17 +217,24 @@ header {
   background-color: rgb(255,255,255);
   background-color: rgba(255,255,255, .9);
   overflow-y: hidden;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -o-transition: .5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
   z-index: 1;
 }
 
 .overlay-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+}
+
+.overlay-content a {
   color: #40AEFE;
   cursor: pointer;
-  display: block;
+  /* display: block; */
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 3rem;
@@ -231,17 +245,15 @@ header {
   -moz-transition: .3s;
   -o-transition: .3s;
   text-align: center;
-  top: 20%;
   transition: .3s;
-  width: auto;
   z-index: 2;
 }
 
-.overlay-content:hover {
+.overlay-content a:hover {
   color: #8ACEFF;
 }
 
-.overlay-content:before {
+.overlay-content a:before {
   background-color: #8ACEFF;
   content: "";
   position: absolute;
@@ -254,18 +266,18 @@ header {
   -moz-transform: scaleX(0);
   -o-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  -o-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
 }
 
-.overlay-content:hover:before {
+.overlay-content a:hover:before {
   visibility: visible;
-  -webkit-transform: scaleX(.7);
-  -moz-transform: scaleX(.7);
-  -o-transform: scaleX(.7);
-  transform: scaleX(.7);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* project roles table */
@@ -352,7 +364,7 @@ h3 {
 }
 
 h4 {
-  color: #333333;
+  color: #555;
   font-family: proxima-nova, sans-serif;
   font-size: 1.4rem;
   font-weight: 300;
@@ -361,11 +373,18 @@ h4 {
 }
 
 h5 {
-  color: #333333;
+  color: #333;
   font-family: proxima-nova, sans-serif;
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.5;
+}
+
+h6 {
+  color: #999;
+  font-family: proxima-nova, sans-serif;
+  font-size: .7rem;
+  font-weight: 300;
 }
 
 .highlight {
@@ -390,6 +409,7 @@ b {
   border: 2px solid #F69709;
   border-radius: 25px;
   color: #F69709;
+  cursor: pointer;
   display: block;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
@@ -401,7 +421,7 @@ b {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  width: 75vw;
+  width: 20rem;
 }
 
 .button:hover {
@@ -410,17 +430,50 @@ b {
   color: #FFFFFF;
 }
 
-/* footer */
+/* contact */
 
-footer.mdl-mini-footer {
-  bottom: 0;
-  margin-top: 10%;
-  padding: 0.5rem;
-  width: 100%;
-  z-index: 1;
+.contact-block {
+  margin-top: 35%;
 }
 
-footer.mdl-mini-footer > ul {
-  margin: auto;
-  font-size: 2rem;
+.form-block {
+  text-align: center;
+}
+
+form, input, textarea {
+  color: #555;
+  font-family: proxima-nova, sans-serif;
+  font-size: .7rem;
+  font-weight: 300;
+}
+
+.contact-links {
+  text-align: center;
+  margin-top: 4rem;
+  /* color: #40AEFE; */
+}
+
+.contact-links li {
+  display: inline;
+  padding: 0 2rem;
+  font-size: 2.5rem;
+}
+
+.fa {
+  color: #E0E0E0;
+  transition: 0.3s ease;
+}
+
+.fa:hover {
+  color: #A3A3A3;
+}
+
+/* footer */
+
+footer {
+  bottom: 0;
+  padding: 0.5rem;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
 }
