@@ -487,6 +487,19 @@ form, input, textarea {
   color: #A3A3A3;
 }
 
+/*to top button */
+
+#toTop {
+  border: none;
+  bottom: 2rem;
+  cursor: pointer;
+  display: none;
+  outline: none;
+  position: fixed;
+  right: 1.5rem;
+  z-index: 5;
+}
+
 /* footer */
 
 footer {
