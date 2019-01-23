@@ -7,6 +7,19 @@
 }
 
 @media screen and (min-width: 991px) {
+  #about {
+    column-count: 2;
+    column-gap: 3rem;
+    column-rule-style: none;
+  }
+
+  /* h2 {
+    column-span: all;
+  } */
+
+  h4 {
+    font-size: 10px;
+  }
 
   form {
     max-width: 50%;
@@ -24,7 +37,7 @@
 body {
   font-size: 10px;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 *, *:before, *:after {
@@ -333,6 +346,11 @@ img {
   width: 100%;
 }
 
+/* survey responses chart */
+canvas {
+  margin: 2rem 0;
+}
+
 /* font and typography styling */
 
 h1 {
@@ -405,6 +423,7 @@ b {
 }
 
 /* button styling */
+
 .button {
   border: 2px solid #F69709;
   border-radius: 25px;

@@ -40,4 +40,4 @@ var contactWaypoint = new Waypoint({
     }
   },
   offset: 50
-})
+});

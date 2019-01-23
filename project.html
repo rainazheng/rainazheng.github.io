@@ -102,6 +102,11 @@
         <h2>The Problem</h2>
         <h4>There have been a number of cloud storage services gaining prominence in the past several years, like Google Drive or Dropbox, but these services are generalized and better utilized for file sorting and sharing. Photo-sharing apps like Instagram and Pinterest have a narrower focus, but lean heavily towards the social media aspect and don’t provide high-quality photo storage and organization tools.</h4>
       </section>
+      <!-- solution -->
+      <section id="solution" class="prj-part">
+        <h2>The Solution</h2>
+        <h4>Muse focuses on high-quality photo storage that allows users to upload and organize multiple photos at once. You can curate collections, use tags to organize them, and share them easily with other people. They're photo books for the digital age.</h4>
+      </section>
       <!-- process -->
       <section id="process" class="prj-part" style="padding-top: 2rem;">
         <h2>The Process</h2>
@@ -110,7 +115,8 @@
       <section id="r-and-d" class="prj-part" style="padding-top: 0;">
         <h3>Research and Discovery</h3>
         <h4>The first step in this process was to gather crucial background information. I crafted a survey that would determine which cloud storage apps people used the most, what features the liked the best, and what their biggest frustrations were. I also wanted to gauge how interested people would be in a photo organization/sharing app, and collected responses from people across all genders, age groups, and professions.</h4>
-        <img src="images/survey-results-graph.png" alt="Survey results" class="only-pics">
+        <!-- <img src="images/survey-results-graph.png" alt="Survey results" class="only-pics"> -->
+        <canvas id="surveyResults" width="300" height="300"></canvas>
         <h4>Key Takeaways:<br>
           <ul>
             <li class="takeaways">Respondents were most frustrated with <b>price</b>, <b>storage space limitations</b>, and <b>quality limitations (e.g., photo resolution)</b></li>
@@ -265,5 +271,7 @@
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="scripts/graph.js"></script>
   </body>
 </html>
