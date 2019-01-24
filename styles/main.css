@@ -116,7 +116,7 @@ header {
 
 #steppers {
   bottom: 50px;
-  color: #CBC3B7;
+  color: rgba(246,151,9,.25);
   list-style-type: disc;
   margin: 0 3rem;
   position: fixed;
@@ -333,7 +333,8 @@ img {
 }
 
 /* survey responses chart */
-canvas {
+.graph {
+  max-width: 80vw;
   margin: 2rem 0;
 }
 
