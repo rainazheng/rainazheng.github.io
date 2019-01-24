@@ -56,7 +56,6 @@ body {
 }
 
 section {
-  /* height: 100%; */
   overflow: visible;
   position: relative;
   scroll-snap-align: start;
@@ -70,13 +69,11 @@ section {
   position: relative;
   scroll-snap-align: start;
   width: 75%;
-  /*border: 2px solid orange;*/
 }
 
 .prj-part {
   padding-top: 4rem;
   align-self: center;
-  /* border: 2px solid red; */
 }
 
 .hero-text, .projects {
@@ -113,7 +110,6 @@ header {
   width: auto;
   z-index: 3;
   padding-left: 0.5rem;
-  /* border: 2px solid blue; */
 }
 
 /* page steppers */
@@ -125,7 +121,6 @@ header {
   margin: 0 3rem;
   position: fixed;
   font-size: 1.5rem;
-  /* width: 2rem; */
 }
 
 .activeStepper {
@@ -247,7 +242,6 @@ header {
 .overlay-content a {
   color: #40AEFE;
   cursor: pointer;
-  /* display: block; */
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 3rem;
@@ -299,7 +293,6 @@ header {
   display: flex;
   display: block;
   flex-wrap: wrap;
-  /* border: 2px solid red; */
 }
 
 .table-foot {
@@ -314,7 +307,6 @@ header {
   box-sizing: border-box;
   height: 1rem;
   flex-grow: 1;
-  /* border: 2px solid purple; */
 }
 
 /* horizontal scrolling */
@@ -324,15 +316,11 @@ img {
   max-width: 80%;
   max-height: 75vh;
   width: auto;
-  /*border: 2px solid blue;*/
 }
 
 .scrolling-wrapper {
   background-color: #F2F9FF;
-  overflow-x: auto;
-  overflow-y: hidden;
   padding: 1rem 0.5rem;
-  scroll-snap-type: x mandatory;
   text-align: center;
   white-space: nowrap;
   width: 100%;
@@ -341,8 +329,6 @@ img {
 .card {
   display: inline-block;
   margin: auto;
-  scroll-snap-align: center;
-  vertical-align: middle;
   width: 100%;
 }
 

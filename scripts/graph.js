@@ -12,7 +12,7 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ["Price", "Storage space limitations", "Quality limitations", "Difficult to use"],
+        labels: ["Price", ["Storage space", "limitations"], ["Quality","limitations"], "Difficult to use"],
         datasets: [{
             label: "% of respondents",
             backgroundColor: '#40AEFE',

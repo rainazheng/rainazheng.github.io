@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/wet2abt.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/flickity.css">
   </head>
   <body>
     <header>
@@ -115,7 +116,6 @@
       <section id="r-and-d" class="prj-part" style="padding-top: 0;">
         <h3>Research and Discovery</h3>
         <h4>The first step in this process was to gather crucial background information. I crafted a survey that would determine which cloud storage apps people used the most, what features the liked the best, and what their biggest frustrations were. I also wanted to gauge how interested people would be in a photo organization/sharing app, and collected responses from people across all genders, age groups, and professions.</h4>
-        <!-- <img src="images/survey-results-graph.png" alt="Survey results" class="only-pics"> -->
         <canvas id="surveyResults" width="300" height="300"></canvas>
         <h4>Key Takeaways:<br>
           <ul>
@@ -137,7 +137,7 @@
          <h3>User Personas</h3>
          <h4>I made two user personas to represent real-world users with varying desires and frustrations: Marisol Lee and Gus Menendez.</h4>
       </section>
-      <div class="scrolling-wrapper">
+      <div class="scrolling-wrapper" data-flickity=''>
         <div class="card">
           <img src="images/marisol.png" alt="Marisol">
         </div>
@@ -158,7 +158,7 @@
         <h3>User Flows</h3>
         <h4>With all this information in hand, the user flows covered onboarding, uploading a file or folder, organizing a group of photos into a collection, sharing photo(s) or collections, and setting up a folder to sync with. Figuring out the details of these processes is an important step in determining scope.</h4>
       </section>
-      <div class="scrolling-wrapper">
+      <div class="scrolling-wrapper" data-flickity=''>
         <div class="card">
           <img src="images/flow1-create-account.png" alt="Create an account">
         </div>
@@ -180,7 +180,7 @@
         <h3>Wireframes</h3>
         <h4>The next step was to create wireframes for each screen in the user flow. These were first drawn by hand, then tweaked in Figma.</h4>
       </section>
-      <div class="scrolling-wrapper">
+      <div class="scrolling-wrapper" data-flickity=''>
         <div class="card">
           <img src="images/wf1-main.png" alt="Main page">
         </div>
@@ -196,7 +196,7 @@
         <h3>User Testing - Round One</h3>
         <h4>Users were tasked with creating an account, uploading a photo, and organizing a few photos into a collection. The basic tasks were completed with largely few issues, but some suggestions cropped up throughout the testing. The dashboard was rearranged to be more efficient, and a “Home” link was added to the navbar.</h4>
       </section>
-      <div class="scrolling-wrapper">
+      <div class="scrolling-wrapper" data-flickity=''>
         <div class="card">
           <img src="images/test1-1.png" alt="Adding a Home button">
           <!-- <img src="images/test1-2.png" alt="Nav bar with a Home button"> -->
@@ -211,7 +211,7 @@
         <h3>Branding</h3>
         <h4>Once the wireframes were done, I turned my focus to the branding. At heart, I wanted Muse to be clean and sleek, so as to better showcase the images. I also wanted the product to be approachable and attract people for whom art or museums “just aren’t their thing.” With a predominantly calm, dark grey background, the logo needed to stand out, so I overlaid whole logo on a vibrant watercolor texture so it would be more dynamic.</h4>
       </section>
-      <div class="scrolling-wrapper">
+      <div class="scrolling-wrapper" data-flickity=''>
         <div class="card">
           <img src="images/style-guide.png" alt="Style guide">
         </div>
@@ -227,7 +227,7 @@
         <h3>Hi-Fi Mockups</h3>
         <h4>High-fidelity mockups were created in Figma to show what the finished product would actually look like. These mockups followed the patterns in the style guide to keep a consistent feel throughout the product.</h4>
       </section>
-      <div class="scrolling-wrapper">
+      <div class="scrolling-wrapper" data-flickity=''>
         <div class="card">
           <img src="images/mockups-desktop.png" alt="Hi-fi mockups for desktop">
         </div>
@@ -240,7 +240,7 @@
         <h3>User Testing - Round Two</h3>
         <h4>Of course, the finished mockups had to undergo another round of user testing to determine if we’d actually accomplished all the high importance user stories. Basic tasks were easy enough to complete, but button styles were changed to something that would be less overwhelming and the picture selection process was made clearer. Help text was also added to an empty dashboard for first-time users to guide them through getting started.</h4>
       </section>
-      <div class="scrolling-wrapper">
+      <div class="scrolling-wrapper" data-flickity=''>
         <div class="card">
           <img src="images/pref-test-1-1.png" alt="Button styles">
           <!-- <img src="images/pref-test-1-2.png" alt="Button style B"> -->
@@ -250,7 +250,7 @@
           <!-- <img src="images/pref-test-2-2.png" alt="Landing page with help text"> -->
         </div>
         <div class="card">
-          <img src="images/pref-test-3-1.png" alt="Picture selection style" style="height: 25vh; width: auto;">
+          <img src="images/pref-test-3-1.png" alt="Picture selection style" style="height: 50vh; width: auto;">
           <!-- <img src="images/pref-test-3-2.png" alt="Picture selection style B"> -->
         </div>
       </div>
@@ -279,5 +279,6 @@
     <script src="scripts/toTop.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="scripts/graph.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
