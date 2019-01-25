@@ -55,6 +55,7 @@ section {
 .takeaways {
   display: list-item;
   font-size: 1.4rem;
+  font-weight: 300;
   list-style-type: square;
   margin: 1rem 0 0 2rem;
 }
@@ -260,24 +261,26 @@ header {
 
 /* project roles table */
 
-.table {
-  display: flex;
-  display: block;
-  flex-wrap: row wrap;
-}
-
 .table-foot {
   padding-bottom: 4rem;
 }
 
-.table-header {
+p {
+  color: #40AEFE;
+  font-family: 'Poppins-Regular', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .table-cell {
-  box-sizing: border-box;
-  height: 1rem;
-  flex-grow: 1;
+  width: 100%;
+  color: #555;
+  font-family: proxima-nova, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 /* horizontal scrolling */
@@ -345,7 +348,6 @@ h4 {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.5;
-  /*width: 30rem;*/
 }
 
 h5 {
@@ -516,11 +518,35 @@ footer {
   }
 
   .table {
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
   }
 
+  .column-one {
+    width: 25%;
+  }
 
+  .column-two {
+    width: 40%;
+  }
+
+  .column-three {
+    width: 20%;
+  }
+  
+  .table-foot {
+    padding-bottom: 0rem;
+  }
+
+  .table-cell {
+    font-size: 1.2rem;
+  }
+
+  .takeaways {
+    font-size: 1.2rem;
+  }
 
   h1 {
     font-size: 4rem;
@@ -559,7 +585,25 @@ footer {
   }
 
   form {
-    max-width: 50%;
+    max-width: 40%;
     margin: auto;
+  }
+
+  /* project styling */
+
+  #roles {
+    width: 70%;
+  }
+
+  .column-one {
+    width: 25%;
+  }
+
+  .column-two {
+    width: 30%;
+  }
+
+  .column-three {
+    width: 15%;
   }
 }
