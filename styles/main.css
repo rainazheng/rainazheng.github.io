@@ -8,7 +8,6 @@
 body {
   font-size: 10px;
   overflow-y: scroll;
-  scroll-snap-type: y proximity;
 }
 
 *, *:before, *:after {
@@ -62,7 +61,7 @@ section {
 
 .only-pics {
   display: block;
-  margin: 0 auto;
+  margin: 5% auto;
 }
 
 /* nav bar */
@@ -471,8 +470,8 @@ footer {
 }
 
 @media screen and (min-width: 575px) {
-/* homepage styling */
 
+/* homepage styling */
   .hero-text {
     padding-top: 30%;
     height: 70vh;
@@ -535,7 +534,7 @@ footer {
   .column-three {
     width: 20%;
   }
-  
+
   .table-foot {
     padding-bottom: 0rem;
   }
@@ -546,6 +545,19 @@ footer {
 
   .takeaways {
     font-size: 1.2rem;
+  }
+
+  .comp-anal-logos {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 550px;
+  }
+
+  .only-pics {
+    display: inline;
+    margin: 5% 2%;
   }
 
   h1 {
@@ -592,7 +604,7 @@ footer {
   /* project styling */
 
   #roles {
-    width: 70%;
+    width: 60%;
   }
 
   .column-one {
