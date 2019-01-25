@@ -263,7 +263,7 @@ header {
 .table {
   display: flex;
   display: block;
-  flex-wrap: wrap;
+  flex-wrap: row wrap;
 }
 
 .table-foot {
@@ -484,6 +484,7 @@ footer {
 
   #about {
     padding-top: 0%;
+    width: 65%;
   }
 
   .only-pics {
@@ -510,9 +511,16 @@ footer {
     max-height: 50%;
   }
 
+  #roles {
+    width: 80%;
+  }
+
   .table {
     display: inline;
+    width: 100%;
   }
+
+
 
   h1 {
     font-size: 4rem;
@@ -541,8 +549,9 @@ footer {
     padding-bottom: 10%;
   }
 
-  h2 {
+  #about h2 {
     column-span: all;
+    margin-bottom: 2%;
   }
 
   .contact-block {
