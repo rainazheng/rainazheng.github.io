@@ -1,7 +1,5 @@
 var ctx = document.getElementById('surveyResults').getContext('2d');
-// var grd = ctx.createLinearGradient(150, 0, 150, 300);
-// grd.addColorStop(0,'#C2E5FF');
-// grd.addColorStop(1,'#40AEFE');
+ctx.height = 200;
 Chart.defaults.global.defaultFontFamily = "'proxima-nova', sans-serif"
 Chart.defaults.global.tooltips.displayColors = false;
 Chart.defaults.scale.gridLines.display = false;
