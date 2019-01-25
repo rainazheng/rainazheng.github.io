@@ -1,5 +1,18 @@
 @media screen and (min-width: 575px) {
 
+  h1 {
+    font-size: 70px;
+  }
+
+  .hero-text {
+    padding-top: 30%;
+    /* height: 70vh; */
+  }
+
+  .project {
+    padding-top: 10%;
+  }
+
   form {
     max-width: 75%;
     margin: auto;
@@ -7,6 +20,7 @@
 }
 
 @media screen and (min-width: 991px) {
+
   #about {
     column-count: 2;
     column-gap: 3rem;
@@ -77,8 +91,8 @@ section {
 }
 
 .hero-text, .projects {
-  padding-top: 15vh;
-  height: 70vh;
+  padding-top: 15%;
+  height: 70%;
 }
 
 .takeaways {
