@@ -307,7 +307,7 @@ img {
 
 /* survey responses chart */
 .graph {
-  max-width: 80vw;
+  /* max-width: 80vw; */
   margin: 2rem 0;
 }
 
@@ -491,6 +491,7 @@ footer {
   .only-pics {
     max-height: 30rem;
     width: auto;
+    margin: auto;
   }
 
   .contact-block {
@@ -502,6 +503,10 @@ footer {
     margin: auto;
   }
 
+  .overlay-content a {
+    padding: 3.5rem 0 1.5rem 0;
+  }
+
 /* project page styling */
   .prj-part {
     width: 33rem;
@@ -509,7 +514,7 @@ footer {
   }
 
   .graph {
-    max-height: 50%;
+    /* height: 60%; */
   }
 
   #roles {
@@ -570,6 +575,10 @@ footer {
 }
 
 @media screen and (min-width: 991px) {
+  .homepage-section {
+    height: 100vh;
+  }
+
   .hero-text {
     padding-top: 20%;
     max-width: 80%;
@@ -589,7 +598,11 @@ footer {
 
   #about h2 {
     column-span: all;
-    margin-bottom: 2%;
+  }
+
+  .about-title {
+    margin-bottom: 5rem;
+    /* border: 2px solid red; */
   }
 
   .contact-block {
