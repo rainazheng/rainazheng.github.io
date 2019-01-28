@@ -22,6 +22,7 @@ var chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
+      maintainAspectRatio: false,
       title: {
         display: true,
         text: "Common User Frustrations"

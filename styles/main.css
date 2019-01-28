@@ -307,7 +307,7 @@ img {
 
 /* survey responses chart */
 .graph {
-  /* max-width: 80vw; */
+  height: 40vh;
   margin: 2rem 0;
 }
 
@@ -472,6 +472,7 @@ footer {
 @media screen and (min-width: 575px) {
 
 /* homepage styling */
+
   .hero-text {
     padding-top: 30%;
     height: 70vh;
@@ -489,9 +490,9 @@ footer {
   }
 
   .only-pics {
-    max-height: 30rem;
     width: auto;
-    margin: auto;
+    margin: 0 auto;
+    /* border: 2px solid red; */
   }
 
   .contact-block {
@@ -511,10 +512,6 @@ footer {
   .prj-part {
     width: 33rem;
     margin: auto;
-  }
-
-  .graph {
-    /* height: 60%; */
   }
 
   #roles {
@@ -560,11 +557,6 @@ footer {
     width: 550px;
   }
 
-  .only-pics {
-    display: inline;
-    margin: 5% 2%;
-  }
-
   h1 {
     font-size: 4rem;
   }
@@ -575,10 +567,6 @@ footer {
 }
 
 @media screen and (min-width: 991px) {
-  .homepage-section {
-    height: 100vh;
-  }
-
   .hero-text {
     padding-top: 20%;
     max-width: 80%;
@@ -593,16 +581,10 @@ footer {
     column-count: 2;
     column-gap: 3rem;
     column-rule-style: none;
-    padding-bottom: 10%;
   }
 
   #about h2 {
-    column-span: all;
-  }
-
-  .about-title {
-    margin-bottom: 5rem;
-    /* border: 2px solid red; */
+    /* column-span: all; */
   }
 
   .contact-block {
