@@ -46,7 +46,7 @@ section {
   align-self: center;
 }
 
-.hero-text, .projects {
+.hero-text, .project {
   padding-top: 15%;
   height: 70%;
 }
@@ -264,7 +264,7 @@ header {
   padding-bottom: 4rem;
 }
 
-p {
+.table p {
   color: #40AEFE;
   font-family: 'Poppins-Regular', sans-serif;
   font-size: 1.6rem;
@@ -362,6 +362,14 @@ h6 {
   font-family: proxima-nova, sans-serif;
   font-size: .7rem;
   font-weight: 300;
+}
+
+p {
+  color: #555;
+  font-family: proxima-nova, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 .highlight {
@@ -478,14 +486,13 @@ footer {
     height: 70vh;
   }
 
-  .projects {
-    padding-top: 10%;
+  .project {
+    width: 75%;
     margin: auto;
-    width: 50%;
   }
 
   #about {
-    padding-top: 2%;
+    padding-top: 5%;
     width: 65%;
   }
 
@@ -564,6 +571,10 @@ footer {
   h4 {
     font-size: 1.2rem;
   }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 991px) {
@@ -573,8 +584,34 @@ footer {
     height: 70vh;
   }
 
-  .projects {
-    padding-top: 5%;
+  .project {
+    padding-top: 20%;
+    /* height: 50vh; */
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr ;
+    grid-template-areas:
+      "title screenshots"
+      "text screenshots"
+      "text screenshots";
+  }
+
+  .prj-title {
+    grid-area: title;
+    align-self: end;
+    /* border: 2px solid purple; */
+  }
+
+  .prj-text {
+    grid-area: text;
+    align-self: start;
+  }
+
+  .prj-screenshot {
+    grid-area: screenshots;
+    align-self: center;
   }
 
   #about {
