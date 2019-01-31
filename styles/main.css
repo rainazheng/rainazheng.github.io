@@ -4,15 +4,18 @@
 }
 
 /* structure */
+*, *:before, *:after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 body {
   font-size: 10px;
   overflow-y: scroll;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+.scroll-snap {
+  scroll-snap-type: y proximity;
 }
 
 .container {

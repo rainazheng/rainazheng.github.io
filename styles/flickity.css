@@ -138,3 +138,16 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
+
+/* --- captions --- */
+
+.caption {
+  background: #F2F9FF;
+  font-size: .9rem;
+  font-style: italic;
+  margin: 0;
+  /* position: absolute;
+  bottom: 0px;
+  left: 50%; */
+  text-align: center;
+}
