@@ -49,9 +49,14 @@ section {
   align-self: center;
 }
 
-.hero-text, .project {
-  padding-top: 15%;
-  height: 70%;
+#hero, #contact, #projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text, .contact-block {
+  padding-bottom: 10%;
 }
 
 .takeaways {
@@ -73,7 +78,7 @@ header {
   height: 3rem;
   padding: 1rem;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 5;
 }
 
@@ -106,7 +111,7 @@ header {
 #nav-icon {
   float: right;
   height: 27px;
-  margin: 1rem .5rem;
+  margin: 1rem;
   position: relative;
   width: 30px;
   -webkit-transform: rotate(0deg);
@@ -285,6 +290,46 @@ header {
   line-height: 1.5;
 }
 
+/* user stories table */
+
+.user-stories-table {
+  overflow-x: auto;
+}
+
+table {
+  color: #555;
+  font-family: proxima-nova, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 80%;
+  max-width: 40rem;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+td:nth-child(2) {
+  text-align: left;
+}
+
+th,td {
+  padding: .75rem 1rem;
+}
+
+th {
+  border-bottom: 1px solid #999;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+td {
+
+}
+
+
 /* horizontal scrolling */
 img {
   display: inline-block;
@@ -297,6 +342,7 @@ img {
 .scrolling-wrapper {
   background-color: #F2F9FF;
   padding: 1rem 0.5rem;
+  margin-top: 2rem;
   text-align: center;
   white-space: nowrap;
   width: 100%;
@@ -306,6 +352,10 @@ img {
   display: inline-block;
   margin: auto;
   width: 100%;
+}
+
+.caption {
+  color: #888;
 }
 
 /* survey responses chart */
@@ -327,9 +377,9 @@ h1 {
 
 h2 {
   color: #40AEFE;
-  font-family: 'Poppins-Bold', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
@@ -337,8 +387,9 @@ h2 {
 
 h3 {
   color: #40AEFE;
-  font-family: 'Poppins-Regular', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
+  font-weight: 400;
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
@@ -365,6 +416,7 @@ h6 {
   font-family: proxima-nova, sans-serif;
   font-size: .7rem;
   font-weight: 300;
+  margin: 0;
 }
 
 p {
@@ -410,6 +462,7 @@ b {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: .3s ease;
   width: 20rem;
 }
 
@@ -421,9 +474,9 @@ b {
 
 /* contact */
 
-.contact-block {
+/* .contact-block {
   margin-top: 35%;
-}
+} */
 
 .form-block {
   text-align: center;
@@ -474,7 +527,7 @@ form, input, textarea {
 
 footer {
   bottom: 0;
-  padding: 0.5rem;
+  padding-bottom: 1rem;
   text-align: center;
   width: 100%;
   z-index: 1;
@@ -484,15 +537,10 @@ footer {
 
 /* homepage styling */
 
-  .hero-text {
-    padding-top: 30%;
-    height: 70vh;
-  }
-
-  .project {
+  /* .project {
     width: 75%;
     margin: auto;
-  }
+  } */
 
   #about {
     padding-top: 5%;
@@ -505,9 +553,9 @@ footer {
     /* border: 2px solid red; */
   }
 
-  .contact-block {
+  /* .contact-block {
     margin-top: 15%;
-  }
+  } */
 
   form {
     max-width: 75%;
@@ -581,14 +629,16 @@ footer {
 }
 
 @media screen and (min-width: 991px) {
+  .scroll-snap {
+    scroll-snap-type: y mandatory;
+  }
+
   .hero-text {
-    padding-top: 20%;
     max-width: 80%;
-    height: 70vh;
   }
 
   .project {
-    padding-top: 20%;
+    /* padding-top: 20%; */
     /* height: 50vh; */
     margin: auto;
     width: 100%;
@@ -627,9 +677,9 @@ footer {
     /* column-span: all; */
   }
 
-  .contact-block {
+  /* .contact-block {
     margin-top: 5%;
-  }
+  } */
 
   form {
     max-width: 40%;

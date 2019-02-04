@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muse | Case Study</title>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133288225-1"></script>
     <script>
@@ -11,11 +15,9 @@
       gtag('config', 'UA-133288225-1');
     </script>
 
-    <meta charset="utf-8">
-    <title>Muse | Case Study</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo-simple.png"/>
+
     <!-- MDL -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-light_blue.min.css" />
@@ -27,8 +29,8 @@
     <!-- custom styles -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/wet2abt.css">
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/flickity.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
     <header>
@@ -144,7 +146,61 @@
         <h4>Next, I developed user stories in order to visualize what different users would want to accomplish. These were from three different perspectives: <b>a new user</b>, a <b>returning user</b>, and <b>all users</b>, and ranked in importance of <b>high</b>, <b>medium</b>, or <b>low</b>.</h4>
       </section>
       <div class="scrolling-wrapper">
-        <img src="images/user-stories.png" alt="User stories">
+        <!-- <img src="images/user-stories.png" alt="User stories"> -->
+        <div class="user-stories-table">
+          <table>
+            <tr>
+              <th>Role</th>
+              <th>Task</th>
+              <th>Importance</th>
+            </tr>
+            <tr>
+              <td>New user</td>
+              <td>Create an account</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>New user</td>
+              <td>Set up automatic syncing for a specific folder</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Create new collection (folder)</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Organize photos into collections</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Organize photos with tags</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Share a photo with a link, email, or through social media</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Share a collection with a link, email, or through social media</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Upload specific handpicked photos</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Upload a folder of photos</td>
+              <td>High</td>
+            </tr>
+          </table>
+        </div>
         <p class="caption">High importance user stories</p>
       </div>
       <!-- user flows -->
@@ -292,6 +348,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="scripts/graph.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <!-- <script src="scripts/imgCaptions.js"></script> -->
   </body>
 </html>

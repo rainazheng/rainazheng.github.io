@@ -7,7 +7,8 @@
     $('#nav-icon, #menu').toggleClass('open');
   });
 
-  $(function() {
-    $('#homepage').addClass('.scroll-snap');
-  })
+  // --- trying to get scroll snap consistent ---
+  setTimeout(function() {
+    $('#homepage').addClass('scroll-snap');
+  }, 2000);
 }
