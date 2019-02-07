@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muse | Case Study</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133288225-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-133288225-1');
+    </script>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-simple.png"/>
+
+    <!-- MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-light_blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- custom styles -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/wet2abt.css">
+    <link rel="stylesheet" href="styles/flickity.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="https://rainazheng.design/"><img src="images/logo.svg" alt="Raina Zheng"></a>
+      </div>
+      <div id="nav-icon" onclick="openMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="menu" class="closed">
+        <div class="overlay-content">
+          <a href="https://rainazheng.design/#hero">Home</a>
+          <a href="https://rainazheng.design/#projects">Work</a>
+          <a href="https://rainazheng.design/#about">About</a>
+          <a href="https://rainazheng.design/#contact">Contact</a>
+          <a href="documents/resume.pdf" target="_blank">Resume</a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <!-- project header -->
+      <section id="description" class="prj-part" style="padding-top: 2rem;">
+        <h2>MUSE</h2>
+        <h4>Muse is a high-quality photo sharing and organization app that has wide-ranging uses. It’s perfect for museums that want to digitize their collections, photographers who need to showcase their work, or just people who have way too many photos sitting in their phone archives.</h4>
+        <img src="images/sample-product.png" alt="Muse screenshots" class="only-pics">
+        <a href="https://invis.io/UWOURPZSCZG#/328362076_Desktop_-_Create_Account_-_1" target="_blank" class="button">View Desktop Prototype</a>
+        <a href="https://invis.io/69OZ1VCAMDT#/328485197_Mobile_-_Create_Account_-_1" target="_blank" class="button">View Mobile Prototype</a>
+      </section>
+      <!-- roles/deliverables/tools table -->
+      <section id="roles" class="prj-part">
+        <div class="table">
+          <div class="column-one">
+            <div style="order:1" class="table-cell table-header"><p>Roles</p></div>
+            <div style="order:2" class="table-cell">Research</div>
+            <div style="order:3" class="table-cell">Design</div>
+            <div style="order:4" class="table-cell">Branding</div>
+            <div style="order:5" class="table-cell table-foot">Testing</div>
+          </div>
+
+          <div class="column-two">
+            <div style="order:1" class="table-cell table-header"><p>Deliverables</p></div>
+            <div style="order:2" class="table-cell">Wireframes</div>
+            <div style="order:3" class="table-cell">Hi-fi mockups</div>
+            <div style="order:4" class="table-cell">Clickable prototypes</div>
+            <div style="order:5" class="table-cell table-foot">Brand assets</div>
+          </div>
+
+          <div class="column-three">
+            <div style="order:1" class="table-cell table-header"><p>Tools</p></div>
+            <div style="order:2" class="table-cell">Pen and paper</div>
+            <div style="order:3" class="table-cell">Figma</div>
+            <div style="order:4" class="table-cell">InVision</div>
+            <div style="order:5" class="table-cell"></div>
+          </div>
+        </div>
+      </section>
+      <!-- problem -->
+      <section id="problem" class="prj-part">
+        <h2>The Problem</h2>
+        <h4>There have been a number of cloud storage services gaining prominence in the past several years, like Google Drive or Dropbox, but these services are generalized and better utilized for file sorting and sharing. Photo-sharing apps like Instagram and Pinterest have a narrower focus, but lean heavily towards the social media aspect and don’t provide high-quality photo storage and organization tools.</h4>
+      </section>
+      <!-- solution -->
+      <section id="solution" class="prj-part">
+        <h2>The Solution</h2>
+        <h4>Muse focuses on high-quality photo storage that allows users to upload and organize multiple photos at once. You can curate collections, use tags to organize them, and share them easily with other people. They're photo books for the digital age.</h4>
+      </section>
+      <!-- process -->
+      <section id="process" class="prj-part" style="padding-top: 2rem;">
+        <h2>The Process</h2>
+      </section>
+      <!-- research and discovery -->
+      <section id="r-and-d" class="prj-part" style="padding-top: 0;">
+        <h3>Research and Discovery</h3>
+        <h4>The first step in this process was to gather crucial background information. I crafted a survey that would determine which cloud storage apps people used the most, what features the liked the best, and what their biggest frustrations were. I also wanted to gauge how interested people would be in a photo organization/sharing app, and collected responses from people across all genders, age groups, and professions.</h4>
+        <div class="graph">
+          <canvas id="surveyResults"></canvas>
+        </div>
+        <h4>Key Takeaways:<br>
+          <ul>
+            <li class="takeaways">Respondents were most frustrated with <b>price</b>, <b>storage space limitations</b>, and <b>quality limitations (e.g., photo resolution)</b></li>
+            <li class="takeaways">Users wished for <b>better organizational tools</b></li>
+            <li class="takeaways"><b>63%</b> reported having various amounts of difficulty in organizing their personal photos and would like a single platform to organize and share them</li>
+          </ul>
+        </h4>
+      </section>
+      <!-- competitive analysis -->
+      <section id="comp-anal" class="prj-part">
+        <h3>Competitive Analysis</h3>
+        <h4>Out of all the cloud storage services on the market, Google Drive is the most cost-effective and has many native apps for creating content, such as Docs and Sheets. It also boasts robust real-time collaboration features, but since its launch, users have found the interface difficult to navigate. Dropbox is great for businesses and is better at integrating content from the web, but has fewer ways to create content and has also suffered from security concerns over the years. Finally, Pinterest has a much more visually-focused interface, but it's seriously lacking in collaboration tools and other organizational tools. </h4>
+      </section>
+      <div class="comp-anal-logos">
+        <img src="images/google.png" alt="Google" class="only-pics" style="height: 8rem;">
+        <img src="images/dropbox.png" alt="Dropbox" class="only-pics" style="height: 2rem;">
+        <img src="images/pinterest.png" alt="Google" class="only-pics" style="height: 6rem;">
+      </div>
+      <!-- user personas -->
+      <section id="user-personas" class="prj-part">
+         <h3>User Personas</h3>
+         <h4>I made two user personas to represent real-world users with varying desires and frustrations: Marisol Lee and Gus Menendez.</h4>
+      </section>
+      <div class="scrolling-wrapper" data-flickity=''>
+        <div class="card">
+          <img src="images/marisol.png" alt="Marisol">
+        </div>
+        <div class="card">
+          <img src="images/gus.png" alt="Gus">
+        </div>
+      </div>
+      <!-- user stories -->
+      <section id="user-stories" class="prj-part">
+        <h3>User Stories</h3>
+        <h4>Next, I developed user stories in order to visualize what different users would want to accomplish. These were from three different perspectives: <b>a new user</b>, a <b>returning user</b>, and <b>all users</b>, and ranked in importance of <b>high</b>, <b>medium</b>, or <b>low</b>.</h4>
+      </section>
+      <div class="scrolling-wrapper">
+        <!-- <img src="images/user-stories.png" alt="User stories"> -->
+        <div class="user-stories-table">
+          <table>
+            <tr>
+              <th>Role</th>
+              <th>Task</th>
+              <th>Importance</th>
+            </tr>
+            <tr>
+              <td>New user</td>
+              <td>Create an account</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>New user</td>
+              <td>Set up automatic syncing for a specific folder</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Create new collection (folder)</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Organize photos into collections</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Organize photos with tags</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Share a photo with a link, email, or through social media</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Share a collection with a link, email, or through social media</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Upload specific handpicked photos</td>
+              <td>High</td>
+            </tr>
+            <tr>
+              <td>All users</td>
+              <td>Upload a folder of photos</td>
+              <td>High</td>
+            </tr>
+          </table>
+        </div>
+        <p class="caption">High importance user stories</p>
+      </div>
+      <!-- user flows -->
+      <section id="user-flows" class="prj-part">
+        <h3>User Flows</h3>
+        <h4>With all this information in hand, the user flows covered onboarding, uploading a file or folder, organizing a group of photos into a collection, sharing photo(s) or collections, and setting up a folder to sync with. Figuring out the details of these processes is an important step in determining scope.</h4>
+      </section>
+      <div class="scrolling-wrapper" data-flickity=''>
+        <div class="card">
+          <img src="images/flow1-create-account.png" alt="Create an account">
+          <p class="caption">Create an account</p>
+        </div>
+        <div class="card">
+          <img src="images/flow2-upload.png" alt="Upload photos">
+          <p class="caption">Upload photos</p>
+        </div>
+        <div class="card">
+          <img src="images/flow3-organize.png" alt="Organize a collection">
+          <p class="caption">Organize a collection</p>
+        </div>
+        <div class="card">
+          <img src="images/flow4-share.png" alt="Share a collection">
+          <p class="caption">Share a collection</p>
+        </div>
+        <div class="card">
+          <img src="images/flow5-sync.png" alt="Sync a collection">
+          <p class="caption">Sync a collection</p>
+        </div>
+      </div>
+      <!-- wireframes -->
+      <section id="wireframes" class="prj-part">
+        <h3>Wireframes</h3>
+        <h4>The next step was to create wireframes for each screen in the user flow. These were first drawn by hand, then tweaked in Figma.</h4>
+      </section>
+      <div class="scrolling-wrapper" data-flickity=''>
+        <div class="card">
+          <img src="images/wf1-main.png" alt="Main page">
+          <p class="caption">Homepage</p>
+        </div>
+        <div class="card">
+          <img src="images/wf2-landing.png" alt="Landing page">
+          <p class="caption">Landing page</p>
+        </div>
+        <div class="card">
+          <img src="images/wf3-add.png" alt="Add photos to a collection">
+          <p class="caption">Add photos to a collection</p>
+        </div>
+      </div>
+      <!-- user testing - round one -->
+      <section id="user-testing1" class="prj-part">
+        <h3>User Testing - Round One</h3>
+        <h4>Users were tasked with creating an account, uploading a photo, and organizing a few photos into a collection. The basic tasks were completed with largely few issues, but some suggestions cropped up throughout the testing. The dashboard was rearranged to be more efficient, and a “Home” link was added to the navbar.</h4>
+      </section>
+      <div class="scrolling-wrapper" data-flickity=''>
+        <div class="card">
+          <img src="images/test1-1.png" alt="Adding a Home button">
+          <p class="caption">Added a home button</p>
+        </div>
+        <div class="card">
+          <img src="images/test2-1.png" alt="Nav bar placement">
+          <p class="caption">Switched from a vertical to a horizontal nav bar</p>
+        </div>
+      </div>
+      <!-- branding -->
+      <section id="branding" class="prj-part">
+        <h3>Branding</h3>
+        <h4>Once the wireframes were done, I turned my focus to the branding. At heart, I wanted Muse to be clean and sleek, so as to better showcase the images. I also wanted the product to be approachable and attract people for whom art or museums “just aren’t their thing.” With a predominantly calm, dark grey background, the logo needed to stand out, so I overlaid whole logo on a vibrant watercolor texture to make it more dynamic.</h4>
+      </section>
+      <div class="scrolling-wrapper" data-flickity=''>
+        <div class="card">
+          <img src="images/style-guide.png" alt="Style guide">
+          <p class="caption">Muse style guide</p>
+        </div>
+        <div class="card">
+          <img src="images/branding-brainstorming.jpg" alt="Logo brainstorming">
+          <p class="caption">Logo brainstorming with paper and pen</p>
+        </div>
+        <div class="card">
+          <img src="images/logo-iterations.png" alt="Logo iterations">
+          <p class="caption">Logo iterations</p>
+        </div>
+        <div class="card">
+          <img src="images/logos-final.png" alt="Final logos">
+          <p class="caption">Final logos</p>
+        </div>
+      </div>
+      <!-- hi-fi mockups -->
+      <section id="hi-fi-mockups" class="prj-part">
+        <h3>Hi-Fi Mockups</h3>
+        <h4>High-fidelity mockups were created in Figma to show what the finished product would actually look like. These mockups followed the patterns in the style guide to keep a consistent feel throughout the product.</h4>
+      </section>
+      <div class="scrolling-wrapper" data-flickity=''>
+        <div class="card">
+          <img src="images/mockups-desktop.png" alt="Hi-fi mockups for desktop">
+          <p class="caption">For the desktop version</p>
+        </div>
+        <div class="card">
+          <img src="images/mockups-mobile.png" alt="Hi-fi mockups for mobile">
+          <p class="caption">For the mobile version</p>
+        </div>
+      </div>
+      <!-- user testing - round two -->
+      <section id="user-testing2" class="prj-part">
+        <h3>User Testing - Round Two</h3>
+        <h4>Of course, the finished mockups had to undergo another round of user testing to determine if we’d actually accomplished all the high importance user stories. Basic tasks were easy enough to complete, but button styles were changed to something that would be less overwhelming and the picture selection process was made clearer. Help text was also added to an empty dashboard for first-time users to guide them through getting started.</h4>
+      </section>
+      <div class="scrolling-wrapper" data-flickity=''>
+        <div class="card">
+          <img src="images/pref-test-1-1.png" alt="Button styles">
+          <p class="caption">Changed button styles</p>
+        </div>
+        <div class="card">
+          <img src="images/pref-test-2-1.png" alt="Help text">
+          <p class="caption">Added help text</p>
+        </div>
+        <div class="card">
+          <img src="images/pref-test-3-1.png" alt="Picture selection style" style="height: 50vh; width: auto;">
+          <p class="caption">Changed picture selection style</p>
+        </div>
+      </div>
+
+      <!-- conclusion -->
+      <section id="conclusion" class="prj-part">
+        <h3>Conclusion</h3>
+        <h4>Going through this journey was a process and an extremely valuable experience for me as a designer. I learned a lot about the importance of each step of the process, especially the research-gathering phase. The research you do is the foundation of what you design, and the more information you gather, the stronger your foundation. <br><br>The most difficult part of this process for me was creating the high-fidelity mockups. I knew what feelings and messages I wanted to convey with my design, but I had trouble translating that into a tangible finished product. What I found was that it was easier to step away for a quick break and a mental refresh every so often, or look for inspiration in other places, instead of mulishly trying to push through it. Sourcing opinions from others with A/B testing and usability testing was also invaluable, and a good way to get back on track. <br><br>By being thorough in my background research and gathering the requisite information, I’ve positioned my product to fill a space in the current market. By going through several iterations of designing and collecting user reactions through multiple rounds of user testing, I’ve created an experience that is intuitive and easy for people to use. The care and attention I put into each step of the process ensures that Muse is the best solution for the problem.</h4>
+        <a href="https://invis.io/UWOURPZSCZG#/328362076_Desktop_-_Create_Account_-_1" target="_blank" class="button" style="margin-top: 5%;">View Desktop Prototype</a>
+        <a href="https://invis.io/69OZ1VCAMDT#/328485197_Mobile_-_Create_Account_-_1" target="_blank" class="button">View Mobile Prototype</a>
+      </section>
+    </div>
+
+    <!-- to top button -->
+    <button onclick="topFunction()" id="toTop" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+      <i class="material-icons md-36">expand_less</i>
+    </button>
+
+    <!-- footer -->
+    <footer>
+      <h6>© Raina Zheng 2019</h6>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/toTop.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="scripts/graph.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
