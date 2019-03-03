@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BusyBus | Case Study</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133288225-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-133288225-1');
+    </script>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-simple.png"/>
+
+    <!-- MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.orange-light_blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- custom styles -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/wet2abt.css">
+    <link rel="stylesheet" href="styles/flickity.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="https://rainazheng.design/"><img src="images/logo.svg" alt="Raina Zheng"></a>
+      </div>
+      <div id="nav-icon" onclick="openMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="menu" class="closed">
+        <div class="overlay-content">
+          <a href="https://rainazheng.design/#hero">Home</a>
+          <a href="https://rainazheng.design/#projects">Work</a>
+          <a href="https://rainazheng.design/#about">About</a>
+          <a href="https://rainazheng.design/#contact">Contact</a>
+          <a href="documents/resume.pdf" target="_blank">Resume</a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <!-- project header -->
+      <section id="description" class="prj-part" style="padding-top: 2rem;">
+        <h2>BusyBus</h2>
+        <h4>BusyBus is an app concept to improve the current DC Metro and Bus app. </h4>
+        <img src="images/busybus-screenshot.png" alt="BusyBus screenshots" class="only-pics">
+      </section>
+      <!-- roles/deliverables/tools table -->
+      <section id="roles" class="prj-part">
+        <div class="table">
+          <div class="column-one">
+            <div style="order:1" class="table-cell table-header"><p>Roles</p></div>
+            <div style="order:2" class="table-cell">Research</div>
+            <div style="order:3" class="table-cell">Design</div>
+            <div style="order:4" class="table-cell table-foot">Testing</div>
+          </div>
+
+          <div class="column-two">
+            <div style="order:1" class="table-cell table-header"><p>Deliverables</p></div>
+            <div style="order:2" class="table-cell">Wireframes</div>
+            <div style="order:3" class="table-cell">Hi-fi mockups</div>
+            <div style="order:4" class="table-cell"></div>
+          </div>
+
+          <div class="column-three">
+            <div style="order:1" class="table-cell table-header"><p>Tools</p></div>
+            <div style="order:2" class="table-cell">Pen and paper</div>
+            <div style="order:3" class="table-cell">Figma</div>
+            <div style="order:4" class="table-cell"></div>
+          </div>
+        </div>
+      </section>
+      <!-- problem -->
+      <section id="problem" class="prj-part">
+        <h2>The Problem</h2>
+        <h4>While many transit systems have their own apps to help people plan their trips, DC Metro and Bus leaves something to be desired. It doesn’t tell you the rates or the cost of your trip, and users are constantly bombarded with in-app ads.</h4>
+      </section>
+      <!-- solution -->
+      <section id="solution" class="prj-part">
+        <h2>The Solution</h2>
+        <h4>BusyBus can help users plan the best way to commute using DC’s metro and bus system. It shows live estimates for any stop or station, the fastest route to take to get from point A to point B, and lets you reload your SmarTrip card on the go, so you won’t get held up at the fare vending machines.</h4>
+      </section>
+    </div>
+
+    <!-- to top button -->
+    <button onclick="topFunction()" id="toTop" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+      <i class="material-icons md-36">expand_less</i>
+    </button>
+
+    <!-- footer -->
+    <footer>
+      <h6>© Raina Zheng 2019</h6>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/toTop.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="scripts/graph.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
