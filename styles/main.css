@@ -49,10 +49,19 @@ section {
   align-self: center;
 }
 
+.project {
+  margin-bottom: 5rem;
+}
+
 #hero, #contact, #projects {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#about {
+  padding-top: 5%;
 }
 
 .hero-text, .contact-block {
@@ -626,6 +635,7 @@ footer {
 
   .project {
     margin: auto;
+    padding-bottom: 10%;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
