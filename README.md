@@ -1,6 +1,6 @@
 # Portfolio
 
-A showcase of my work.
+A showcase of my past work. 
 
 ![portfolio homepage screenshot](https://github.com/rainazheng/rainazheng.github.io/blob/master/github%20screenshot%20-%20portfolio%201.png)
 
